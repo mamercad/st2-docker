@@ -12,7 +12,7 @@ services:
       ST2_AUTH_USERNAME: ${ST2_AUTH_USERNAME:-st2admin}
       ST2_AUTH_PASSWORD: ${ST2_AUTH_PASSWORD:-Ch@ngeMe}
     # command: bash -c "ln -s /tools/bats/libexec/bats /sbin/bats && /st2tests.sh"
-    command: bash -c "ln -s /tools/opt/bats/bin/bats /sbin/bats && /st2tests.sh"
+    command: bash -c "ln -s /tools/opt/bats/bin/bats /usr/bin/bats && /st2tests.sh"
     volumes:
       - ./st2tests.sh:/st2tests.sh:ro
       - tools:/tools
